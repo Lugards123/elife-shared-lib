@@ -1,3 +1,3 @@
-def call(string repoUrl){
-	echo "git clone, $repoUrl"
+def call(String repoUrl){
+  echo "git clone, $repoUrl"
 }
