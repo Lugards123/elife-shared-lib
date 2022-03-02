@@ -37,7 +37,7 @@ pipeline{
       }
       post {
         always {
-          pitmutation mutationStatsFile: '/target/pit-reports//mutations.xml'
+          pitmutation mutationStatsFile: '**/target/pit-reports/**/mutations.xml'
         }
       }
     }
@@ -49,6 +49,6 @@ pipeline{
   -Dsonar.login=4aaaf08f2683cd939534baa4e4b1401f291499c9'
       }
     }
-  }
+  }    
 }
 }  
