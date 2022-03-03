@@ -16,7 +16,7 @@ def call(String repoUrl){
     }
    stage('Build Artifact - Maven') {
       steps {
-        sh "mvn clean package -DskipTests=true"
+        sh "mvn clean package -DskipTests=false"
         archive 'target/*.jar'
       }
    }
